@@ -2,8 +2,8 @@ package db
 
 import (
 	"fmt"
-	"github.com/nkhoaa96/go-base.git/adapter/vault"
-	"github.com/nkhoaa96/go-base.git/storage/local"
+	"github.com/nkhoaa96/go-base/adapter/vault"
+	"github.com/nkhoaa96/go-base/storage/local"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -31,5 +31,5 @@ func GetDBConnection(opts ...gorm.Option) (*gorm.DB, error) {
 
 	options = append(options, opts...)
 	db, err := gorm.Open(postgres.Open(psqlInfo), opts...)
-	return &DBClient{}
+	return &DBClient{}, nil
 }
