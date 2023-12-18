@@ -1,4 +1,4 @@
-module github.com/nkhoaa96/go-base.git
+module github.com/nkhoaa96/go-base
 
 go 1.20
 
