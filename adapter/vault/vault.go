@@ -3,7 +3,7 @@ package vault
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/nkhoaa96/go-base.git/storage/local"
+	"github.com/nkhoaa96/go-base/storage/local"
 	"io"
 	"net/http"
 )

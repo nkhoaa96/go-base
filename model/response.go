@@ -1,6 +1,6 @@
 package model
 
-type BaseReponse struct {
+type BaseResponse struct {
 	Code    int             `json:"code"`
 	Message MessageResponse `json:"message"`
 	Data    interface{}     `json:"data"`

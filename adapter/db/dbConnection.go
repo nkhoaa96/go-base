@@ -30,6 +30,5 @@ func GetDBConnection(opts ...gorm.Option) (*gorm.DB, error) {
 	)
 
 	options = append(options, opts...)
-	db, err := gorm.Open(postgres.Open(psqlInfo), opts...)
-	return &DBClient{}, nil
+	return gorm.Open(postgres.Open(psqlInfo), opts...)
 }
