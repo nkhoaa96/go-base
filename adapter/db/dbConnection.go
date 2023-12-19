@@ -14,6 +14,7 @@ func GetDBConnection(opts ...gorm.Option) (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println(password)
 	var (
 		host     = local.Getenv("DB_HOST")
 		port     = local.Getenv("DB_PORT")
